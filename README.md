@@ -59,5 +59,6 @@ Guidance :
 · This proxy receives a podcast request from the app, send this request to the rss service, gets the XML returned and translate it to json format, returning this to the webapp.
  · CSS3-features such as rounded corners and gradients are used  to make a clear and nice UI. 
 
+# Interface
 This is the webapp interface:
 ![alt tag](https://github.com/rtrujillor/podcast-client/blob/master/podcast_interface.png)
