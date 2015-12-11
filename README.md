@@ -24,13 +24,16 @@ Using the information in the RSS XML feed, the app displays:
  
 Please note that the app is expected to work even if the RSS feed from CNN is changed to another CNN video podcast RSS feed with the same structure. For example, if the app is working with the feed for ”Fareed Zakaria GPS”, the app must also work when the feed URL is switched to ”State of the Union (Video)” (or any other equivalent video podcast feed).  
 
-Requirements   
+The requirements for the webapp are:
+
 · The app works in Firefox 5.+ and/or in Chrome.  
 · The app is developed using (X)HTML, JavaScript and CSS.  
 · The app is usable by using only the arrow keys (UP/DOWN/LEFT/RIGHT) for navigation, and the return key (ENTER) for selection. 
 · The app fits entirely inside an area of 1280x720 pixels. 
 · The app is runnable using a normal web server, in the development I have used npm module http-server. 
 
-Guidance   
+Guidance : 
 · A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used, with some changes to manage and allow CORS. This proxy receives a podcast request from the app, send this request to the rss service, gets the XML returned and translate it to json format, returning this to the webapp.
  · CSS3-features such as rounded corners and gradients are used  to make a clear and nice UI. 
+
+This is the webapp interface:
