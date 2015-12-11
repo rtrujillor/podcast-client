@@ -5,12 +5,10 @@ The webapp is based on AngularJS, Bootstrap, UI Bootstrap and Font Awesome.
 
 The goal of this  sample is to create a web app which lets you browse and watch a subset of the CNN Video Podcast catalog.  
 
- · The application reads the RSS file for one of the video podcasts available on http://www.cnn.com/services/podcasting/.
- 
- When first loads, the url pointing to is http://rss.cnn.com/services/podcasting/ac360/rss.xml
- 
- The application displays a list of available episodes for the feed.   
- 
+The application reads the RSS file for one of the video podcasts available on http://www.cnn.com/services/podcasting/.
+
+ · When first loads, the url pointing to is http://rss.cnn.com/services/podcasting/ac360/rss.xml
+ · The application displays a list of available episodes for the feed.   
  · The list shows all the  episodes, and allow the user to scroll up and down in the list in case more than four episodes are available.  
  · When the user selects one episode, that episode starts playing in the video playback area and the episode's description appears beneath the video playback area.  
  
@@ -33,6 +31,7 @@ The requirements for the webapp are:
 · The app is runnable using a normal web server, in the development I have used npm module http-server. 
 
 Guidance : 
+
 · A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used, with some changes to manage and allow CORS. This proxy receives a podcast request from the app, send this request to the rss service, gets the XML returned and translate it to json format, returning this to the webapp.
  · CSS3-features such as rounded corners and gradients are used  to make a clear and nice UI. 
 
