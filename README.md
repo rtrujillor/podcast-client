@@ -21,6 +21,8 @@ On another console, point to the podcast-client directory and then execute:
 
 $ http-server -p80 ./build
 
+Follow the instructions below related to the instalation and execution of a Proxy - Parser
+
 Open your browser and point to http://localhost:80
 
 That's all!
@@ -55,7 +57,7 @@ The requirements for the webapp are:
 · The app fits entirely inside an area of 1280x720 pixels. 
 · The app is runnable using a normal web server, in the development I have used npm module http-server. 
 
-# Proxy
+# Proxy / Parser
 
 · A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used (thanks to https://github.com/danmactough !) , with some changes to manage and allow CORS. 
 · This proxy receives a podcast request from the app, send this request to the rss service, gets the XML returned and translate it to json format, returning this to the webapp.
