@@ -1,9 +1,36 @@
-# podcast-client
-Podcast web client that allows you to connect to a podcast service just writing the service rss url  and reproduce the podcast feeds.
 
-The webapp is based on AngularJS, Bootstrap, UI Bootstrap and Font Awesome.
+Podcast web client that allows you to connect to a podcast service just writing the service rss url, and so reproduce the podcast feeds.
 
-The goal of this  sample is to create a web app which lets you browse and watch a subset of the CNN Video Podcast catalog.  
+# Quickstart
+
+Install Node.js and then:
+
+$ git clone https://github.com/rtrujillor/podcast-client.git
+
+$ cd podcast-client
+
+$ sudo npm -g install grunt-cli karma bower http-server
+
+$ npm install
+
+$ bower install
+
+$ grunt watch
+
+On another console, point to the podcast-client directory and then execute:
+
+$ http-server -p80 ./build
+
+Follow the instructions below related to the instalation and execution of a Proxy - Parser
+
+Open your browser and point to http://localhost:80
+
+That's all!
+
+# Description
+The webapp is based on AngularJS, Bootstrap, UI Bootstrap and Font Awesome. Lastly, it contains a sophisticated Grunt-based build system to ensure maximum productivity. 
+
+The goal of this  sample is to create a web app which lets you browse and watch a subset of the CNN Video Podcast catalog, but just changing the url of the rss service allows you to browse and watch any video podcast service.
 
 The application reads the RSS file for one of the video podcasts available on http://www.cnn.com/services/podcasting/.
 
@@ -30,10 +57,21 @@ The requirements for the webapp are:
 · The app fits entirely inside an area of 1280x720 pixels. 
 · The app is runnable using a normal web server, in the development I have used npm module http-server. 
 
-Guidance : 
+# Proxy / Parser
 
-· A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used, with some changes to manage and allow CORS. 
+· A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used (thanks to https://github.com/danmactough !) , with some changes to manage and allow CORS. 
 · This proxy receives a podcast request from the app, send this request to the rss service, gets the XML returned and translate it to json format, returning this to the webapp.
- · CSS3-features such as rounded corners and gradients are used  to make a clear and nice UI. 
 
+To install and execute the parser proxy:
+
+$ git clone https://github.com/rtrujillor/node-parserproxy.git
+
+$ cd node-parserproxy 
+
+$ npm install
+
+$ node server.js
+
+# Interface
 This is the webapp interface:
+![alt tag](https://github.com/rtrujillor/podcast-client/blob/master/podcast_interface.png)
