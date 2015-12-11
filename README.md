@@ -57,9 +57,19 @@ The requirements for the webapp are:
 
 # Proxy
 
-· A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used, with some changes to manage and allow CORS. 
+· A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used (thanks to https://github.com/danmactough !) , with some changes to manage and allow CORS. 
 · This proxy receives a podcast request from the app, send this request to the rss service, gets the XML returned and translate it to json format, returning this to the webapp.
  · CSS3-features such as rounded corners and gradients are used  to make a clear and nice UI. 
+
+To install and execute the parser proxy:
+
+$ git clone https://github.com/rtrujillor/node-parserproxy.git
+
+$ cd node-parserproxy 
+
+$ npm install
+
+$ node server.js
 
 # Interface
 This is the webapp interface:
