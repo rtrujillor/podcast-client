@@ -5,15 +5,32 @@ The webapp is based on AngularJS, Bootstrap, UI Bootstrap and Font Awesome.
 
 The goal of this  sample is to create a web app which lets you browse and watch a subset of the CNN Video Podcast catalog.  
 
- · The application must read the RSS file for one of the video podcasts available on http://www.cnn.com/services/podcasting/ (scroll to the ”Video Podcasts” section).   · The application must display a list of available episodes for the feed.   · The list must show four episodes, and allow the user to scroll up and down in the list in case more than four episodes are available.  · When the user selects one episode, that episode shall start playing in the video playback area and the episode's description must appear beneath the video playback area.  
+ · The application reads the RSS file for one of the video podcasts available on http://www.cnn.com/services/podcasting/.
  
-Using the information in the RSS XML feed, the app must display:  
+ When first loads, the url pointing to is http://rss.cnn.com/services/podcasting/ac360/rss.xml
+ 
+ The application displays a list of available episodes for the feed.   
+ 
+ · The list shows all the  episodes, and allow the user to scroll up and down in the list in case more than four episodes are available.  
+ · When the user selects one episode, that episode starts playing in the video playback area and the episode's description appears beneath the video playback area.  
+ 
+Using the information in the RSS XML feed, the app displays:  
 
- · The podcast name  · The podcast description  · A list of episodes with their title and pub date  · A video window showing episodes
+ · The podcast name  
+ · The podcast description  
+ · A list of episodes with their title and pub date  
+ · A video window showing episodes
+ · A description of the current video 
  
- · A description of the current video  
-Please note that the app is expected to work even if the RSS feed from CNN is changed to another CNN video podcast RSS feed with the same structure. For example, if the app is working with the feed for ”Fareed Zakaria GPS”, the app must also work when the feed URL is switched to ”State of the Union (Video)” (or any other equivalent video podcast feed).  Requirements   · The app must work in Firefox 5.+ and/or in Chrome.  · The app must be developed using (X)HTML, JavaScript and CSS.  · The app must be usable by using only the arrow keys (UP/DOWN/LEFT/RIGHT) for navigation, and the return key (ENTER) for selection. We don’t accept any dependencies on mouse navigation!  · The app should fit entirely inside an area of 1280x720 pixels. 
+Please note that the app is expected to work even if the RSS feed from CNN is changed to another CNN video podcast RSS feed with the same structure. For example, if the app is working with the feed for ”Fareed Zakaria GPS”, the app must also work when the feed URL is switched to ”State of the Union (Video)” (or any other equivalent video podcast feed).  
 
- · The app should be runnable using a normal Apache server. If additional plugins are required, please include instructions on how to install them.   Guidance   · You will need to create some sort of proxy to be able to read XML feeds from CNN.com using AJAX. Please include this proxy and instructions on how to run it in your submission.  · Firebug is a useful tool for developing this kind of application.  · You have to figure out all design/graphics elements yourself. It does not have to look great, but try to be creative.
- 
+Requirements   
+· The app works in Firefox 5.+ and/or in Chrome.  
+· The app is developed using (X)HTML, JavaScript and CSS.  
+· The app is usable by using only the arrow keys (UP/DOWN/LEFT/RIGHT) for navigation, and the return key (ENTER) for selection. 
+· The app fits entirely inside an area of 1280x720 pixels. 
+· The app is runnable using a normal web server, in the development I have used npm module http-server. 
+
+Guidance   
+· A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used, with some changes to manage and allow CORS. This proxy receives a podcast request from the app, send this request to the rss service, gets the XML returned and translate it to json format, returning this to the webapp.
  · CSS3-features such as rounded corners and gradients are used  to make a clear and nice UI. 
