@@ -1,5 +1,5 @@
 {
-  "name": "ng-boilerplate",
+  "name": "podcast-client",
   "version": "0.3.2",
   "devDependencies": {
     "angular": "~1.2",
