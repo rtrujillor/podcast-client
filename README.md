@@ -1,4 +1,4 @@
-# podcast-client
+
 Podcast web client that allows you to connect to a podcast service just writing the service rss url  and reproduce the podcast feeds.
 
 # Quickstart
@@ -6,12 +6,19 @@ Podcast web client that allows you to connect to a podcast service just writing 
 Install Node.js and then:
 
 $ git clone https://github.com/rtrujillor/podcast-client.git
+
 $ cd podcast-client
+
 $ sudo npm -g install grunt-cli karma bower http-server
+
 $ npm install
+
 $ bower install
+
 $ grunt watch &
+
 $ http-server -p80 ./build
+
 
 Open your browser and point to http://localhost:80
 That's all!
