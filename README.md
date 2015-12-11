@@ -19,14 +19,13 @@ $ grunt watch &
 
 $ http-server -p80 ./build
 
-
 Open your browser and point to http://localhost:80
 That's all!
 
 # Description
-The webapp is based on AngularJS, Bootstrap, UI Bootstrap and Font Awesome.
+The webapp is based on AngularJS, Bootstrap, UI Bootstrap and Font Awesome. Lastly, it contains a sophisticated Grunt-based build system to ensure maximum productivity. 
 
-The goal of this  sample is to create a web app which lets you browse and watch a subset of the CNN Video Podcast catalog.  
+The goal of this  sample is to create a web app which lets you browse and watch a subset of the CNN Video Podcast catalog, but just changing the url of the rss service allows you to browse and watch any video podcast service.
 
 The application reads the RSS file for one of the video podcasts available on http://www.cnn.com/services/podcasting/.
 
