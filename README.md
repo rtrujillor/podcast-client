@@ -15,7 +15,9 @@ $ npm install
 
 $ bower install
 
-$ grunt watch &
+$ grunt watch
+
+On another console, point to the podcast-client directory and then execute:
 
 $ http-server -p80 ./build
 
