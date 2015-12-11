@@ -1,5 +1,5 @@
 
-Podcast web client that allows you to connect to a podcast service just writing the service rss url  and reproduce the podcast feeds.
+Podcast web client that allows you to connect to a podcast service just writing the service rss url, and so reproduce the podcast feeds.
 
 # Quickstart
 
@@ -20,6 +20,7 @@ $ grunt watch &
 $ http-server -p80 ./build
 
 Open your browser and point to http://localhost:80
+
 That's all!
 
 # Description
