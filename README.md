@@ -55,7 +55,7 @@ The requirements for the webapp are:
 · The app fits entirely inside an area of 1280x720 pixels. 
 · The app is runnable using a normal web server, in the development I have used npm module http-server. 
 
-Guidance : 
+# Proxy
 
 · A  proxy has been used to be able to read XML feeds from CNN.com using http. Specifically, module node-parserproxy has been used, with some changes to manage and allow CORS. 
 · This proxy receives a podcast request from the app, send this request to the rss service, gets the XML returned and translate it to json format, returning this to the webapp.
