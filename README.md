@@ -1,6 +1,22 @@
 # podcast-client
 Podcast web client that allows you to connect to a podcast service just writing the service rss url  and reproduce the podcast feeds.
 
+# Quickstart
+
+Install Node.js and then:
+
+$ git clone https://github.com/rtrujillor/podcast-client.git
+$ cd podcast-client
+$ sudo npm -g install grunt-cli karma bower http-server
+$ npm install
+$ bower install
+$ grunt watch &
+$ http-server -p80 ./build
+
+Open your browser and point to http://localhost:80
+That's all!
+
+# Description
 The webapp is based on AngularJS, Bootstrap, UI Bootstrap and Font Awesome.
 
 The goal of this  sample is to create a web app which lets you browse and watch a subset of the CNN Video Podcast catalog.  
