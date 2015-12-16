@@ -1,3 +1,4 @@
+https://travis-ci.org/rtrujillor/podcast-client.svg?branch=master
 
 Podcast web client that allows you to connect to a podcast service just writing the service rss url, and so reproduce the podcast feeds.
 
