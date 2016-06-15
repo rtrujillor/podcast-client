@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/rtrujillor/podcast-client.svg?branch=master)](https://travis-ci.org/rtrujillor/podcast-client)
+[![Code Climate](https://codeclimate.com/repos/5761486356f44e006d006443/badges/5eb55389e31b6298494f/gpa.svg)](https://codeclimate.com/repos/5761486356f44e006d006443/feed)
 
 Podcast web client that allows you to connect to a podcast service just writing the service rss url, and so reproduce the podcast feeds.
 
